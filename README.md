@@ -57,3 +57,14 @@ DB_CONFIG = {
 streamlit run app.py
 
 浏览器会自动打开 http://localhost:8501
+
+___________________________________________________
+
+数据库表结构
+CREATE TABLE qa_records (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    question TEXT,
+    answer TEXT,
+    model VARCHAR(50),
+    timestamp DATETIME
+);
